@@ -4,8 +4,8 @@
   "description": "Example sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w src/project/ -o dist/css/ --recursive",
+    "build:css": "node-sass --include-path scss src/scss/home.scss dist/css/home.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/sheerien/temp_sass#readme",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^4.14.1"
   }
 }
